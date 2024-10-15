@@ -64,3 +64,14 @@ app.post('/getWeather', async(req, res) => {
         console.log("Error", error);
     }
 })
+
+app.post('/getPhoto', async(req, res) => {
+    const url = `https://pixabay.com/api/?key=${process.env.PIXABAY_KEY}&q=${req.body.city}&image_type=photo`;
+    const response = await fetch(url)
+    try {
+        const data = await response.json();
+        res.send(data);
+    } catch(error) {
+        console.log("Error", error);
+    }
+})

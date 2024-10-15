@@ -30,7 +30,8 @@ async function handleSubmit(that) {
         forecast: weather.data[forecastDay].weather.description
     }
 
-    projectData.image_url = "https://picsum.photos/300/300";
+    const image = await Client.getData('/getPhoto', { city: userData.to });
+    projectData.image_url = image.hits[0].largeImageURL;
 
     /* add weatherData to the projectData object and update UI */
     Object.assign(projectData, weatherData);

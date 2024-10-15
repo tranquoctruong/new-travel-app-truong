@@ -28,6 +28,11 @@
         line-height: 2px;
     }
 
+    &__button:hover {
+        background: darkgray;
+        color: white;
+    }
+
     @media screen and (max-width: 600px) {
         flex-direction: column;
         align-items: left;

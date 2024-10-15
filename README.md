@@ -19,10 +19,11 @@ npm install
 ```
 
 ### Step 2: Configure API Key
-Create a .env file in the root directory and add your API and username (This source inclue env value so you don't need to do this step):
+Create a .env file in the root directory and add your WEATHERBIT Key, PIXABAY Key and GEOCODES User name (This source inclue env value so you don't need to do this step):
 ```makefile
 GEOCODES_NAME=YOUR-USERNAME
 WEATHERBIT_KEY=YOUR-KEY
+PIXABAY_KEY=YOUR-KEY
 ```
 
 ### Step 3: Build and Run the Application
@@ -54,6 +55,7 @@ Open your browser and go to http://localhost:8080.
 - [Babel](https://babeljs.io/)
 - [Geonames API](http://api.geonames.org)
 - [Wheatherbit API](https://api.weatherbit.io)
+- [Pixabay API](https://pixabay.com)
 
 ### References
 
